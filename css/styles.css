@@ -1,0 +1,206 @@
+header {
+  background-color: #4C4C4C;
+  position: relative;
+}
+header .navbar {
+  justify-content: space-around;
+}
+header .navbar__header {
+  display: flex;
+}
+header .navbar__nav {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+header .navbar__dropdown {
+  width: 100%;
+  margin: 0;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  background-color: #212121;
+  border-radius: inherit;
+}
+header .navbar__dropdown.show {
+  display: flex;
+}
+header .navbar__dropdown__item {
+  color: #C6C6C6;
+}
+
+section .infoContent__title {
+  color: #35A9DC;
+  font-size: 36px;
+}
+section .infoContent__paragraph {
+  color: #999999;
+  font-weight: 600;
+}
+section .content-banner .row {
+  margin: 0;
+}
+section .slider {
+  padding: 0;
+}
+section .slider img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+section .slider__prev-btn {
+  bottom: 30px;
+  top: inherit;
+  font-size: 35px;
+}
+section .slider__next-btn {
+  top: inherit;
+  bottom: 31px;
+  left: 40px;
+  font-size: 35px;
+}
+section .form {
+  padding: 20px 15px;
+  background-color: #C6C6C6;
+  padding: 20px 15px;
+  margin: -23px auto;
+  border-top: 4px solid #35A9DC;
+}
+section .form label {
+  display: none;
+}
+section .form .form-group {
+  margin: 0;
+  padding: 0;
+}
+section .form button {
+  width: 100%;
+  background-color: #BBD550;
+  box-shadow: 0px 5px 0px 0px #96A82A;
+  margin: 12px 0;
+  color: #fff;
+}
+section .form .form-control {
+  border-radius: inherit;
+}
+
+footer {
+  background-color: #7C7C7C;
+  color: #fff;
+  margin-top: 60px;
+}
+footer .nav {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+}
+footer .nav__item {
+  margin-bottom: 15px;
+}
+footer .nav__link {
+  color: #fff;
+}
+footer .nav__item--social {
+  list-style: inherit;
+  margin: 0 10px;
+  font-size: 23px;
+}
+footer .copyright {
+  background-color: #000;
+}
+
+.modalCustom {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  transition: opacity 0.3s ease;
+  z-index: 16;
+}
+.modalCustom__content {
+  background-color: #fff;
+  width: 400px;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.modalCustom__close-btn {
+  background-color: #35A9DC;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 25px;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .content-banner {
+    position: relative;
+  }
+
+  .form {
+    position: absolute;
+    top: 60px;
+    right: 75px;
+  }
+}
+@media (min-width: 992px) {
+  .form-control::placeholder {
+    opacity: 0;
+  }
+
+  .content-banner {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+    margin-top: -60px;
+  }
+
+  section .infoContent {
+    border-bottom: 68px solid #35A9DC;
+  }
+  section .infoContent__title {
+    color: #35A9DC;
+    font-size: 36px;
+  }
+  section .infoContent__paragraph {
+    color: #999999;
+    font-weight: 600;
+  }
+  section .form {
+    padding: 0;
+    position: inherit;
+    margin: 0;
+    border-top: none;
+  }
+  section .form label {
+    display: block;
+  }
+  section .form option:first-child {
+    display: none;
+  }
+  section .form .form-group {
+    padding: 0 5px;
+    margin-bottom: 16px;
+  }
+  section form {
+    padding: 0 15px;
+  }
+}
